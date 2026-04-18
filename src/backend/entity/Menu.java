@@ -6,44 +6,44 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Menu {
-    private String idMenu;
-    private String tenMenu;
-    private String moTa;
-    private TrangThaiMenu trangThai;
-    private LocalDateTime ngayTao;
+    private String MenuID;
+    private String TenMenu;
+    private String MoTa;
+    private TrangThaiMenu TrangThai;
+    private LocalDateTime NgayTao;
 
     private List<MonAn> danhSachMonAn = new ArrayList<>();
 
     // ================ CONSTRUCTOR =================
     public Menu() {}
 
-    public Menu(String idMenu, String tenMenu, String moTa, TrangThaiMenu trangThai) {
-        this.idMenu = idMenu;
-        this.tenMenu = tenMenu;
-        this.moTa = moTa;
-        this.trangThai = trangThai;
-        this.ngayTao = LocalDateTime.now();
+    public Menu(String MenuID, String TenMenu, String MoTa, TrangThaiMenu TrangThai) {
+        this.MenuID = MenuID;
+        this.TenMenu = TenMenu;
+        this.MoTa = MoTa;
+        this.TrangThai = TrangThai;
+        this.NgayTao = LocalDateTime.now();
     }
 
     // ================ GETTER =================
     public String getIdMenu() {
-        return idMenu;
+        return MenuID;
     }
 
     public String getTenMenu() {
-        return tenMenu;
+        return TenMenu;
     }
 
     public String getMoTa() {
-        return moTa;
+        return MoTa;
     }
 
     public TrangThaiMenu getTrangThai() {
-        return trangThai;
+        return TrangThai;
     }
 
     public LocalDateTime getNgayTao() {
-        return ngayTao;
+        return NgayTao;
     }
 
     public List<MonAn> getDanhSachMonAn() {
@@ -51,24 +51,24 @@ public class Menu {
     }
 
     // ================ SETTER =================
-    public void setIdMenu(String idMenu) {
-        this.idMenu = idMenu;
+    public void setIdMenu(String MenuID) {
+        this.MenuID = MenuID;
     }
 
-    public void setTenMenu(String tenMenu) {
-        this.tenMenu = tenMenu;
+    public void setTenMenu(String TenMenu) {
+        this.TenMenu = TenMenu;
     }
 
     public void setMoTa(String moTa) {
-        this.moTa = moTa;
+        this.MoTa = MoTa;
     }
 
     public void setTrangThai(TrangThaiMenu trangThai) {
-        this.trangThai = trangThai;
+        this.TrangThai = TrangThai;
     }
 
     public void setNgayTao(LocalDateTime ngayTao) {
-        this.ngayTao = ngayTao;
+        this.NgayTao = NgayTao;
     }
 
     public void setDanhSachMonAn(List<MonAn> danhSachMonAn) {
